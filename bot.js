@@ -148,7 +148,7 @@ bot.on("contact", async ctx => {
             "Телефон вказаний": phone,   // ✅ ВИПРАВЛЕНО
             "Telegram": ctx.from.username || "",
             "Захід": [state.selectedEventId],   // Linked Record
-            "Ресурс": "Telegram Bot"
+            //"Ресурс": "Telegram Bot"
         }
     }
 
