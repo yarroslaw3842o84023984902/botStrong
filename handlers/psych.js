@@ -38,4 +38,5 @@ export default function (bot, mainMenu, userState) {
     bot.hears("↩️ Назад", ctx => {
         ctx.reply("Повертаю до головного меню", mainMenu)
     })
+    //
 }
