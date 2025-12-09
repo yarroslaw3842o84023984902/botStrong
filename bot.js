@@ -8,6 +8,7 @@ import kidsHandler from './handlers/kids.js'
 import lecturesHandler from './handlers/lectures.js'
 import supportHandler from './handlers/support.js'
 import 'dotenv/config'
+import http from 'http';
 
 const bot = new Telegraf(process.env.TELEGRAM_API)
 
@@ -224,7 +225,6 @@ bot.on("photo", async ctx => {
 
 bot.launch({ dropPendingUpdates: true })
 
-import http from 'http';
 
 const PORT = process.env.PORT || 3000;
 
